@@ -5,39 +5,25 @@
 }
 
 .portfolio {
-  background: #0d1117;
+  background: linear-gradient(135deg, #0d1117 0%, #161b22 50%, #1c2128 100%);
   color: #e6edf3;
   min-height: 100vh;
-}
-
-/* ========== HERO SECTION ========== */
-.hero {
   position: relative;
-  width: 100vw;
-  min-height: 100vh;
-  left: 50%;
-  right: 50%;
-  margin-left: -50vw;
-  margin-right: -50vw;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 2rem;
-  background: linear-gradient(135deg, #0d1117 0%, #161b22 50%, #1c2128 100%);
-  overflow: hidden;
-  isolation: isolate;
+  overflow-x: hidden;
 }
 
-.hero-bg {
-  position: absolute;
+/* ========== BACKGROUND ANIMATIONS ========== */
+.background-shapes {
+  position: fixed;
   inset: 0;
-  z-index: 0;
+  z-index: 1;
+  pointer-events: none;
 }
 
 .shape {
   position: absolute;
-  opacity: 0.4;
-  filter: blur(2px);
+  opacity: 0.6;
+  filter: blur(1px);
 }
 
 .circle {
@@ -56,9 +42,17 @@
 .circle-2 {
   width: 200px;
   height: 200px;
-  bottom: 15%;
+  top: 60%;
   right: 20%;
   animation: float 15s ease-in-out infinite reverse;
+}
+
+.circle-3 {
+  width: 250px;
+  height: 250px;
+  bottom: 10%;
+  left: 10%;
+  animation: float 18s ease-in-out infinite;
 }
 
 .square {
@@ -77,9 +71,17 @@
 .square-2 {
   width: 150px;
   height: 150px;
-  bottom: 25%;
+  top: 80%;
   left: 8%;
   animation: drift 22s linear infinite reverse;
+}
+
+.square-3 {
+  width: 160px;
+  height: 160px;
+  bottom: 30%;
+  right: 15%;
+  animation: drift 20s linear infinite;
 }
 
 @keyframes float {
@@ -106,9 +108,27 @@
   }
 }
 
+/* ========== HERO SECTION ========== */
+.hero {
+  position: relative;
+  width: 100vw;
+  min-height: 100vh;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  background: transparent;
+  isolation: isolate;
+  z-index: 2;
+}
+
 .hero-content {
   position: relative;
-  z-index: 1;
+  z-index: 3;
   max-width: 900px;
   width: 100%;
   background: rgba(22, 27, 34, 0.92);
@@ -206,6 +226,8 @@
   padding: 5rem 2rem;
   max-width: 1200px;
   margin: 0 auto;
+  position: relative;
+  z-index: 2;
 }
 
 .section-title {

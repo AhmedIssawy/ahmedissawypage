@@ -79,16 +79,19 @@ function App() {
   const isCentennial = age >= 100
 
   return (
-    <div className="portfolio">
-      <section className="hero" id="home">
-        <div className="hero-bg">
-          <span className="shape circle circle-1" />
-          <span className="shape circle circle-2" />
-          <span className="shape square square-1" />
-          <span className="shape square square-2" />
-        </div>
-        
-        <div className="hero-content">
+    <>
+      <div className="background-shapes">
+        <span className="shape circle circle-1" />
+        <span className="shape circle circle-2" />
+        <span className="shape circle circle-3" />
+        <span className="shape square square-1" />
+        <span className="shape square square-2" />
+        <span className="shape square square-3" />
+      </div>
+
+      <div className="portfolio">
+        <section className="hero" id="home">
+          <div className="hero-content">
           <p className="hero-label">Full-Stack Engineer · Cairo, Egypt</p>
           <h1 className="hero-title">
             Ahmed Issawy
@@ -249,7 +252,8 @@ function App() {
       <footer className="footer">
         <p>© {new Date().getFullYear()} <a href="https://ahmedissawy.engineer" target="_blank" rel="noopener noreferrer" className="footer-highlight">Ahmed Issawy</a></p>
       </footer>
-    </div>
+      </div>
+    </>
   )
 }
 
