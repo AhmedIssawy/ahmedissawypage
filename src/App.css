@@ -221,6 +221,12 @@
   border: none;
 }
 
+.btn-resume {
+  background: linear-gradient(135deg, #2ea043 0%, #238636 100%);
+  color: white;
+  border: none;
+}
+
 .btn-secondary {
   background: transparent;
   color: #79c0ff;

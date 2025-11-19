@@ -108,7 +108,7 @@ function App() {
           </p>
           
           <div className="hero-actions">
-            <a href="https://drive.google.com/file/d/1i8aUBno48nl_4knT4qJuj95L34AzfO6_/view?usp=sharing" className="btn btn-primary" target="_blank" rel="noopener noreferrer">
+            <a href="https://drive.google.com/file/d/1i8aUBno48nl_4knT4qJuj95L34AzfO6_/view?usp=sharing" className="btn btn-resume" target="_blank" rel="noopener noreferrer">
               Resume
             </a>
             <a href="https://github.com/AhmedIssawy" className="btn btn-primary" target="_blank" rel="noopener noreferrer">
