@@ -245,7 +245,16 @@ function App() {
           Let's discuss how we can work together.
         </p>
         <div className="contact-links">
-          <a href="mailto:ahmedfaris898@gmail.com" className="contact-btn">ahmedfaris898@gmail.com</a>
+          <button 
+            onClick={() => {
+              navigator.clipboard.writeText('ahmedfaris898@gmail.com');
+              alert('Email copied to clipboard!');
+            }}
+            className="contact-btn"
+            style={{ cursor: 'pointer' }}
+          >
+            ahmedfaris898@gmail.com
+          </button>
           <a href="https://github.com/AhmedIssawy" className="contact-btn" target="_blank" rel="noopener noreferrer">GitHub</a>
           <a href="https://www.linkedin.com/in/ahmed-issawy-fares/" className="contact-btn" target="_blank" rel="noopener noreferrer">LinkedIn</a>
         </div>
