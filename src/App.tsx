@@ -1,4 +1,5 @@
 import './App.css'
+import { useState } from 'react'
 
 const experiences = [
   {
@@ -76,6 +77,7 @@ const calculateAge = () => {
 }
 
 function App() {
+  const [emailCopied, setEmailCopied] = useState(false)
   const age = calculateAge()
   const isCentennial = age >= 100
 
@@ -248,12 +250,17 @@ function App() {
           <button 
             onClick={() => {
               navigator.clipboard.writeText('ahmedfaris898@gmail.com');
-              alert('Email copied to clipboard!');
+              setEmailCopied(true);
+              setTimeout(() => setEmailCopied(false), 1000);
             }}
             className="contact-btn"
-            style={{ cursor: 'pointer' }}
+            style={{ 
+              cursor: 'pointer',
+              backgroundColor: emailCopied ? '#28a745' : '',
+              transition: 'background-color 0.3s ease'
+            }}
           >
-            ahmedfaris898@gmail.com
+            {emailCopied ? 'Copied!' : 'ahmedfaris898@gmail.com'}
           </button>
           <a href="https://github.com/AhmedIssawy" className="contact-btn" target="_blank" rel="noopener noreferrer">GitHub</a>
           <a href="https://www.linkedin.com/in/ahmed-issawy-fares/" className="contact-btn" target="_blank" rel="noopener noreferrer">LinkedIn</a>
