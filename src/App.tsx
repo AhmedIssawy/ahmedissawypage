@@ -17,6 +17,7 @@ const experiences = [
   },
   {
     company: 'El Gammal',
+    url: 'https://www.elgammal.systems/',
     role: 'Fullstack Engineer',
     period: 'May 2024 – Feb 2025',
     location: 'Cairo · Remote',
@@ -97,6 +98,7 @@ function App() {
             Ahmed Issawy
             {isCentennial && <span className="memorial">🕊️ In loving memory · Please pray for him</span>}
           </h1>
+          <p className="hero-alias">Also known as: Ahmed Essawy</p>
           <p className="hero-age">{age} years old</p>
           <p className="hero-intro">
             Building AI-powered scalable systems with Node.js, NestJS, and modern infrastructure. 

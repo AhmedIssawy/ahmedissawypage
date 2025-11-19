@@ -2,7 +2,7 @@
   "@context": "https://schema.org",
   "@type": "Person",
   "name": "Ahmed Issawy",
-  "alternateName": ["أحمد عيسوي", "Ahmed Issawy Fares"],
+  "alternateName": ["أحمد عيسوي", "احمد عيسوي", "أحمد عيسوى", "احمد عيسوى", "Ahmed Issawy Fares", "Ahmed Essawy"],
   "url": "https://ahmedissawy.engineer",
   "image": "https://ahmedissawy.engineer/red_dev.ico",
   "jobTitle": "Backend Engineer",

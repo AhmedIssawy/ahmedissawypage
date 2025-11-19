@@ -157,6 +157,12 @@
   background-clip: text;
 }
 
+.hero-alias {
+  font-size: 0.95rem;
+  color: #9ca3af;
+  margin-top: 0.25rem;
+}
+
 .memorial {
   display: block;
   font-size: 1rem;
