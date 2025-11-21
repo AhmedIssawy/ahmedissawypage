@@ -125,12 +125,12 @@ function App() {
         <h2 className="section-title">About</h2>
         <div className="about-content">
           <p>
-            I'm a <strong>Backend Engineer</strong> at Chameleon, building scalable microservices with NestJS, 
+            I'm a <strong>Backend Engineer</strong> at <a href="https://www.chameleon.io/" target="_blank" rel="noopener noreferrer">Chameleon</a>, building scalable microservices with NestJS, 
             MongoDB, and Redis. Previously at El Gammal, I optimized full-stack systems with Next.js and Node.js, 
             achieving <strong>270% API performance improvements</strong> and deploying containerized applications on AWS.
           </p>
           <p>
-            Currently pursuing a <strong>Bachelor of Computer Engineering with a minor in AI</strong> at MAM University (expected 2028). 
+            Currently pursuing a <strong>Bachelor of Computer Engineering with a minor in AI</strong>. 
             My expertise includes <strong>distributed systems</strong>, <strong>background job processing</strong> with BullMQ, 
             <strong>infrastructure scaling</strong> with Docker and Kubernetes, and <strong>performance optimization</strong> 
             that sustained <strong>50k+ requests/minute</strong> on minimal hardware.
