@@ -125,7 +125,7 @@ function App() {
         <h2 className="section-title">About</h2>
         <div className="about-content">
           <p>
-            I'm a <strong>Backend Engineer</strong> at <a href="https://www.chameleon.io/" target="_blank" rel="noopener noreferrer">Chameleon</a>, building scalable microservices with NestJS, 
+            I'm a <strong>Backend Engineer</strong> at <strong><a href="https://www.chameleon.io/" target="_blank" rel="noopener noreferrer">Chameleon</a></strong>, building scalable microservices with NestJS, 
             MongoDB, and Redis. Previously at El Gammal, I optimized full-stack systems with Next.js and Node.js, 
             achieving <strong>270% API performance improvements</strong> and deploying containerized applications on AWS.
           </p>
